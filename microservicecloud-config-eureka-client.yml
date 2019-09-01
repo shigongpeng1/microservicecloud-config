@@ -2,14 +2,15 @@ spring:
   profiles: 
     active: 
     - dev
-
 ---
+server: 
+  port: 7001
+
 spring: 
   profiles: dev
   application: 
-    name: eureka7001.com
-server: 
-  port: 7001
+    name: microservicecloud-config-eureka-client
+
 eureka: 
 #  server:             eurake自我保护机制
 #    enable-self-preservation: false
